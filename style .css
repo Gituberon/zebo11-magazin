@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-html {
-    overflow: hidden;
-}
-
 body {
     background: #F3F3F3;
     font-family: 'Poppins', sans-serif;
@@ -58,6 +54,43 @@ ul li:nth-child(5) {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
+/* .checkboxbtn{
+    font-size: 30px;
+    color: #000;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 768px) {
+    .checkboxbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        background: darkgrey;
+        transition: 0.5s;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    nav ul li{
+        display: block;
+    }
+}
+@media (max-width: ) {
+    
+} */
 
 header {
     max-width: 1140px;
@@ -130,6 +163,8 @@ section {
     height: 444px;
     border-radius: 30px;
     width: 100%;
+    margin: auto;
+    padding-bottom: 10px;
 }
 
 .section__main h2 {
@@ -161,6 +196,7 @@ section {
     background-color: #fff;
     padding: 26px 41px;
     border-radius: 30px;
+    margin-bottom: 10px;
 }
 
 .section__main--images {
@@ -240,6 +276,8 @@ main {
     height: 444px;
     border-radius: 30px;
     width: 100%;
+    margin: auto;
+    padding-bottom: 10px;
 }
 
 .main__header--cards {
@@ -247,6 +285,7 @@ main {
     padding: 12px 29px;
     border-radius: 30px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .main__header--images {
@@ -325,6 +364,8 @@ article {
     height: 444px;
     border-radius: 30px;
     width: 100%;
+    margin: auto;
+    padding-bottom: 10px;
 }
 
 .article__main--cards {
@@ -332,6 +373,7 @@ article {
     padding: 12px 25px;
     border-radius: 30px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .article__main--images {
@@ -485,6 +527,7 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         text-align: center;
     }
+
 }
 
 @media (max-width: 1260px) {
@@ -616,10 +659,36 @@ footer {
 }
 
 @media (max-width: 425px) {
+    .head h1{
+        font-size: 40px;
+    }
+    .head h3{
+        font-size: 30px;
+    }
+    .head h4 {
+        font-size: 20px;
+    }
+    .section__main h2 {
+        font-size: 40px;
+    }
+    .section__main h5{
+        font-size: 25px;
+    }
+    .main h2{
+        font-size: 40px;
+    }
+    .main h5{
+        font-size: 25px;
+    }
+    .article__header h2{
+        font-size: 40px;
+    }
+    .article__header h5{
+        font-size: 25px;
+    }
     .footer__main {
         gap: 15px;
     }
-
     .footer__main {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
